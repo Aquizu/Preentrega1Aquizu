@@ -1,5 +1,6 @@
 import logo from '../../assets/logo.jpg';
 import CartWidget from '../CartWidget/Index.jsx';
+import ItemList from '../ItemList/index.jsx'
 
 function Navbar () {
   
@@ -10,16 +11,10 @@ function Navbar () {
           <img src={logo} alt="" />
         </figure>
         <menu className="navbar__menu">
-          <li className="navbar__item">
-            <a className='navbar__link' href="">Shop</a>
-          </li>
-          <li className="navbar__item">
-            <a className='navbar__link' href="">Contacto</a>
-          </li>
-          <li className="navbar__item">
-            <a className='navbar__link' href="">Login</a>
-          </li>
-          <li >
+          <ItemList label="Shop" />
+          <ItemList label="Contacto" />
+          <ItemList label="Login" />
+          <li>
             <a href="">
               <CartWidget quantity={2}/>
             </a>
