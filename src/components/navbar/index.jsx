@@ -20,8 +20,8 @@ function Navbar () {
             <a className='navbar__link' href="">Login</a>
           </li>
           <li >
-            <a className='navbar__link' href="">
-              <CartWidget />
+            <a href="">
+              <CartWidget quantity={2}/>
             </a>
           </li>
         </menu>
